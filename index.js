@@ -6,7 +6,7 @@ const { getSign } = require('./utils')
 
 const app = express()
 //端口号
-const port = 3000
+const port = 80
 
 //这里仅列举发送GET请求
 app.get("/get", (req, res) => {
