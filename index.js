@@ -17,6 +17,7 @@ const port = 80
 
 //这里仅列举发送GET请求
 app.post("/getPayInfo", (req, res) => {
+  console.log(req.body, new Date().toLocaleString())
   if (req.body.mchId && req.body.orderNo) {
     const query = {
       mchId: req.body.mchId,
