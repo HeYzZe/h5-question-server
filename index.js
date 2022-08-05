@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
 //端口号
-const port = 80
+const port = 1024
 
 //这里仅列举发送GET请求
 app.post("/getPayInfo", (req, res) => {
